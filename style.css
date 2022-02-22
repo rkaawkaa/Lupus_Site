@@ -1,4 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis&family=Montserrat&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 *{
   margin: 0;
   padding: 0;
@@ -98,12 +100,29 @@ html {
 .icon.cancel-btn{
   position: absolute;
   right: 30px;
-  top: 20px;
+  top: 25px;
 }
 .navbar.sticky .icon.cancel-btn{
   top: 10px;
 }
 
+.arrow {
+  position: absolute;
+  top:92vh;
+  left:50%;
+  translateY(-50%);
+}
+
+.bounce {
+  -moz-animation: bounce 2s infinite;
+  -webkit-animation: bounce 2s infinite;
+  animation: bounce 2s infinite;
+}
+
+.arrow a {
+  color:black;
+  font-size:2.5rem;
+}
 
 h1 {
   margin: 50px 0 40px 0;
@@ -182,8 +201,9 @@ h2 {
   transform: rotateY(180deg);
 }
 
-.faq-title {
-  margin: 0 35px 0 0;
+.faq-container h2 {
+  letter-spacing: .1rem;
+  font-family: 'Raleway', 'sans-serif';
 }
 
 .faq-text {
@@ -247,6 +267,20 @@ footer {
   margin-top: 130px;
 }
 
+
+
+/* keyframes */
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
 
 @media (max-width: 868px) {
   body.disabledScroll{
