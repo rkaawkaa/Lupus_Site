@@ -110,7 +110,8 @@ html {
   position: absolute;
   top:92vh;
   left:50%;
-  translateY(-50%);
+  transform:translateY(-50%);
+ 
 }
 
 .bounce {
@@ -122,6 +123,7 @@ html {
 .arrow a {
   color:black;
   font-size:2.5rem;
+
 }
 
 h1 {
@@ -267,6 +269,9 @@ footer {
   margin-top: 130px;
 }
 
+.wrapper {
+  background-color: red;
+}
 
 
 /* keyframes */
@@ -364,9 +369,11 @@ footer {
   }
   .faq .faq-title {
     font-size:0.9rem;
+    width: 93%;
   }
   .faq .faq-text {
     font-size:0.8rem;
+    
   }
   .faq-container h2 { 
     font-size: 1.3rem;
@@ -383,3 +390,5 @@ footer {
 
 
 }
+
+
