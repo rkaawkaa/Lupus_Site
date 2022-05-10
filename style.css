@@ -389,6 +389,7 @@ footer {
   }
   .faq .faq-toggle {
     top: 10px;
+    right: 10px;
   }
   .faq-container h2 { 
     font-size: 1.3rem;
